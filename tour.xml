@@ -82,10 +82,11 @@
 		<image>
 			<cube url="panos/scene1.tiles/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="174.799" atv="-2.594" linkedscene="scene_scene2" />
 
 	</scene>
 
-	<scene name="scene_scene2" title="scene2" onstart="" thumburl="panos/scene2.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_scene2" title="中心圆广场" onstart="" thumburl="panos/scene2.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -97,7 +98,7 @@
 
 	</scene>
 
-	<scene name="scene_scene3" title="scene3" onstart="" thumburl="panos/scene3.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_scene3" title="南广场东" onstart="" thumburl="panos/scene3.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -109,7 +110,7 @@
 
 	</scene>
 
-	<scene name="scene_scene4" title="scene4" onstart="" thumburl="panos/scene4.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_scene4" title="C0" onstart="" thumburl="panos/scene4.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -121,7 +122,7 @@
 
 	</scene>
 
-	<scene name="scene_scene5" title="scene5" onstart="" thumburl="panos/scene5.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_scene5" title="南广场西" onstart="" thumburl="panos/scene5.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -133,7 +134,7 @@
 
 	</scene>
 
-	<scene name="scene_scene6" title="scene6" onstart="" thumburl="panos/scene6.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_scene6" title="洲际酒店" onstart="" thumburl="panos/scene6.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -145,7 +146,7 @@
 
 	</scene>
 
-	<scene name="scene_scene7" title="scene7" onstart="" thumburl="panos/scene7.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_scene7" title="西广场南" onstart="" thumburl="panos/scene7.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -157,7 +158,7 @@
 
 	</scene>
 
-	<scene name="scene_scene8" title="scene8" onstart="" thumburl="panos/scene8.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_scene8" title="西广场" onstart="" thumburl="panos/scene8.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -169,7 +170,7 @@
 
 	</scene>
 
-	<scene name="scene_scene9" title="scene9" onstart="" thumburl="panos/scene9.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_scene9" title="西广场北" onstart="" thumburl="panos/scene9.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -181,7 +182,7 @@
 
 	</scene>
 
-		<scene name="scene_scene10" title="scene10" onstart="" thumburl="panos/scene10.tiles/thumb.jpg" lat="" lng="" heading="">
+		<scene name="scene_scene10" title="A0" onstart="" thumburl="panos/scene10.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -193,7 +194,7 @@
 
 	</scene>
 
-	<scene name="scene_scene11" title="scene11" onstart="" thumburl="panos/scene11.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_scene11" title="北广场西" onstart="" thumburl="panos/scene11.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -205,7 +206,7 @@
 
 	</scene>
 
-	<scene name="scene_scene12" title="scene12" onstart="" thumburl="panos/scene12.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_scene12" title="北广场东" onstart="" thumburl="panos/scene12.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -217,7 +218,7 @@
 
 	</scene>
 
-	<scene name="scene_scene13" title="scene13" onstart="" thumburl="panos/scene13.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_scene13" title="北厅前" onstart="" thumburl="panos/scene13.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -229,7 +230,7 @@
 
 	</scene>
 
-	<scene name="scene_scene14" title="scene14" onstart="" thumburl="panos/scene14.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_scene14" title="B0" onstart="" thumburl="panos/scene14.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -241,7 +242,7 @@
 
 	</scene>
 
-	<scene name="scene_scene15" title="scene15" onstart="" thumburl="panos/scene15.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_scene15" title="东广场北" onstart="" thumburl="panos/scene15.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -253,7 +254,7 @@
 
 	</scene>
 
-	<scene name="scene_scene16" title="scene16" onstart="" thumburl="panos/scene16.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_scene16" title="东广场南" onstart="" thumburl="panos/scene16.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -265,7 +266,7 @@
 
 	</scene>
 
-	<scene name="scene_scene17" title="scene17" onstart="" thumburl="panos/scene17.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_scene17" title="1H外" onstart="" thumburl="panos/scene17.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -277,7 +278,7 @@
 
 	</scene>
 
-	<scene name="scene_scene18" title="scene18" onstart="" thumburl="panos/scene18.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_scene18" title="1H内" onstart="" thumburl="panos/scene18.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -289,7 +290,7 @@
 
 	</scene>
 
-	<scene name="scene_scene19" title="scene19" onstart="" thumburl="panos/scene19.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_scene19" title="2H内" onstart="" thumburl="panos/scene19.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -301,7 +302,7 @@
 
 	</scene>
 
-	<scene name="scene_scene20" title="scene20" onstart="" thumburl="panos/scene20.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_scene20" title="西厅0m内" onstart="" thumburl="panos/scene20.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -313,7 +314,7 @@
 
 	</scene>
 
-	<scene name="scene_scene21" title="scene21" onstart="" thumburl="panos/scene21.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_scene21" title="2H外" onstart="" thumburl="panos/scene21.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -325,7 +326,7 @@
 
 	</scene>
 
-	<scene name="scene_scene22" title="scene22" onstart="" thumburl="panos/scene22.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_scene22" title="西厅0m中" onstart="" thumburl="panos/scene22.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -337,7 +338,7 @@
 
 	</scene>
 
-	<scene name="scene_scene23" title="scene23" onstart="" thumburl="panos/scene23.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_scene23" title="NH" onstart="" thumburl="panos/scene23.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -349,7 +350,7 @@
 
 	</scene>
 
-	<scene name="scene_scene24" title="scene24" onstart="" thumburl="panos/scene24.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_scene24" title="西厅0m外" onstart="" thumburl="panos/scene24.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -361,7 +362,7 @@
 
 	</scene>
 
-	<scene name="scene_scene25" title="scene25" onstart="" thumburl="panos/scene25.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_scene25" title="北厅0m内" onstart="" thumburl="panos/scene25.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -373,7 +374,7 @@
 
 	</scene>
 
-	<scene name="scene_scene26" title="scene26" onstart="" thumburl="panos/scene26.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_scene26" title="8.1H内" onstart="" thumburl="panos/scene26.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -385,7 +386,7 @@
 
 	</scene>
 
-	<scene name="scene_scene27" title="scene27" onstart="" thumburl="panos/scene27.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_scene27" title="北厅0m外" onstart="" thumburl="panos/scene27.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -397,7 +398,7 @@
 
 	</scene>
 
-	<scene name="scene_scene28" title="scene28" onstart="" thumburl="panos/scene28.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_scene28" title="8.1H中" onstart="" thumburl="panos/scene28.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -409,7 +410,7 @@
 
 	</scene>
 
-	<scene name="scene_scene29" title="scene29" onstart="" thumburl="panos/scene29.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_scene29" title="东厅0m内" onstart="" thumburl="panos/scene29.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -421,7 +422,7 @@
 
 	</scene>
 
-	<scene name="scene_scene30" title="scene30" onstart="" thumburl="panos/scene30.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_scene30" title="8.1H外" onstart="" thumburl="panos/scene30.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -433,7 +434,7 @@
 
 	</scene>
 
-	<scene name="scene_scene31" title="scene31" onstart="" thumburl="panos/scene31.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_scene31" title="东厅0m中" onstart="" thumburl="panos/scene31.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -445,7 +446,7 @@
 
 	</scene>
 
-	<scene name="scene_scene32" title="scene32" onstart="" thumburl="panos/scene32.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_scene32" title="7.1H外" onstart="" thumburl="panos/scene32.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -457,7 +458,7 @@
 
 	</scene>
 
-	<scene name="scene_scene33" title="scene33" onstart="" thumburl="panos/scene33.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_scene33" title="7.1H中" onstart="" thumburl="panos/scene33.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -469,7 +470,7 @@
 
 	</scene>
 
-	<scene name="scene_scene34" title="scene34" onstart="" thumburl="panos/scene34.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_scene34" title="南厅0m内" onstart="" thumburl="panos/scene34.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -481,7 +482,7 @@
 
 	</scene>
 
-	<scene name="scene_scene35" title="scene35" onstart="" thumburl="panos/scene35.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_scene35" title="7.1H内" onstart="" thumburl="panos/scene35.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
