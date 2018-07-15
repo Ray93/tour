@@ -1,6 +1,7 @@
 ﻿<krpano version="1.19" title="国展中心">
 
 	<include url="skin/vtourskin.xml" />
+	<include url="plugins/krpanocms.xml" />
 
 	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
 	<skin_settings maps="false"
@@ -82,7 +83,7 @@
 		<image>
 			<cube url="panos/scene1.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="174.799" atv="-2.594" linkedscene="scene_scene2" />
+		<hotspot name="spot1" title="南广场正中" style="skin_hotspotstyle" ath="174.799" atv="-2.594" linkedscene="scene_scene2" onloaded="showtxt_action();" />
 
 	</scene>
 
