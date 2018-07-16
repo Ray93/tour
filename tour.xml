@@ -1,7 +1,9 @@
 ﻿<krpano version="1.19" title="国展中心">
 
 	<include url="skin/vtourskin.xml" />
+	<include url="plugins/rader.xml" />
 	<include url="plugins/krpanocms.xml" />
+	<include url="plugins/tooltips.xml" />
 
 	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
 	<skin_settings maps="false"
@@ -64,85 +66,7 @@
 	<!-- <include url="skin/vtourskin_design_ultra_light.xml" /> -->
 	<!-- <include url="skin/vtourskin_design_117.xml"         /> -->
 	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
-	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
-
-	<!-- the map image -->
-	<layer name="map" url="map/inmap.png" keep="true" handcursor="false" capture="false"
-	       align="leftbottom"
-	       scale="1" scalechildren="true"
-	       onclick="openmap();"
-	       />
-
-	<!-- map opening - scale the map up to 100% (or smaller if the screen is too small) -->
-	<action name="openmap">
-		set(layer[map].onclick, closemap(); );
-		layer[map].changeorigin(center,center);
-
-		set(bigscale,1.5);
-		if(layer[map].imagewidth GT stagewidth, div(bigscale, stagewidth, layer[map].imagewidth); );
-
-		tween(layer[map].x, 0);
-		tween(layer[map].y, 0);
-		tween(layer[map].scale, get(bigscale));
-	</action>
-
-	<!-- map closing - scale the map back to 0.25 of its image pixelsize -->
-	<action name="closemap">
-		set(layer[map].onclick, openmap(); );
-		layer[map].changeorigin(leftbottom,leftbottom);
-
-		tween(layer[map].x, 0);
-		tween(layer[map].y, 0);
-		tween(layer[map].scale, 1);
-	</action>
-
-	<!-- the map spot images -->
-	<style name="mapspot" keep="true" url="map/mappoint.png" parent="map" align="lefttop" edge="center" scale.mobile="2" />
-
-	<layer name="spot1" style="mapspot" x="98" y="230" zorder="1" onclick="mapspot_loadscene(scene_scene1);" />
-	<layer name="spot2" style="mapspot" x="98" y="147" zorder="1" onclick="mapspot_loadscene(scene_scene2);" />
-
-	<!-- action for loading the scene when clicking on the map spots -->
-	<action name="mapspot_loadscene">
-		if(layer[map].scale GT 1,
-			<!-- special mode for zoomed map: hide big map, loadscene, show small map -->
-			set(layer[map].enabled, false);
-			tween(layer[map].alpha, 0.0, 1, default,
-				loadscene(%1, null, MERGE, BLEND(1));
-
-				set(layer[map].onclick, openmap(); );
-				layer[map].changeorigin(leftbottom,leftbottom);
-
-				set(layer[map].x, 0);
-				set(layer[map].y, 0);
-				set(layer[map].scale, 1);
-
-				set(events[sceneload].onloadcomplete,
-					delayedcall(1,
-						tween(layer[map].alpha, 1.0, 0.5, default, set(layer[map].enabled, true); );
-					  );
-				  );
-			  );
-		  ,
-			<!-- small map: just load the scene -->
-			loadscene(%1, null, MERGE, BLEND(1));
-		  );
-	</action>
-
-	<!-- active spot image (overlays the normal spot) -->
-	<layer name="activespot" url="map/mappointactive.png" keep="true"
-	       align="lefttop" zorder="2" scale.mobile="2"
-	       />
-
-	<!-- radar layer (overlays the normal spot too, but is behind the activespot image) -->
-	<layer name="radar" keep="true"
-	       url.html5="%SWFPATH%/plugins/radar.js"
-	       align="center" zorder="1"
-		   scale="0.4"
-	       scale.mobile="1.5"
-	       fillalpha="0.5" fillcolor="0x7F5F3F"
-	       linewidth="1.0" linecolor="0xE0E0A0" linealpha="0.5"
-	       />	   
+	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->	   
 
 	<!-- startup action - load the first scene -->
 	<action name="startup" autorun="onstart">
@@ -151,12 +75,15 @@
 		if(startactions !== null, startactions() );
 	</action>
 
+	<layer name="spot1" style="mapspot|tooltip" tooltip="南广场正中" x="98" y="230" zorder="1" onclick="mapspot_loadscene(scene_scene1);" />
+	<layer name="spot2" style="mapspot|tooltip" tooltip="中心圆广场" x="98" y="147" zorder="1" onclick="mapspot_loadscene(scene_scene2);" />
+
 	<scene name="scene_scene1" title="南广场正中" onstart="updateradar()" thumburl="panos/scene1.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<action name="updateradar">
 			set(layer[activespot].parent, spot1);
 			set(layer[radar].parent, spot1);
-			set(layer[radar].heading, -270);
+			set(layer[radar].heading, -265);
 		</action>
 
 		<view hlookat="175.187" vlookat="7.137" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
@@ -175,7 +102,7 @@
 		<action name="updateradar">
 			set(layer[activespot].parent, spot2);
 			set(layer[radar].parent, spot2);
-			set(layer[radar].heading, 190);
+			set(layer[radar].heading, 197);
 		</action>
 
 		<view hlookat="-196.477" vlookat="-0.296" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
