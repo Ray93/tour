@@ -19,7 +19,7 @@ delayedcall(get(framespeed), if(loaded, hotspot_animate() ) );
    set(hotspot[get(hotname)].ath,%3);
    set(hotspot[get(hotname)].atv,%4);
    set(hotspot[get(hotname)].linkedscene,%5);
-   <!-- set(hotspot[get(hotname)].onclick,get(onclick)); -->
+   set(hotspot[get(hotname)].onclick,get(onclick));
    hotspot[get(hotname)].loadstyle(hotspotname);
 </action>
 
@@ -37,7 +37,7 @@ delayedcall(get(framespeed), if(loaded, hotspot_animate() ) );
    set(hotspot[get(hotname)].ath,%3);
    set(hotspot[get(hotname)].atv,%4);
    set(hotspot[get(hotname)].linkedscene,%5);
-   <!-- set(hotspot[get(hotname)].onclick,get(onclick)); -->
+   set(hotspot[get(hotname)].onclick,get(onclick));
    hotspot[get(hotname)].loadstyle(hotspotname_j);
 </action>
 

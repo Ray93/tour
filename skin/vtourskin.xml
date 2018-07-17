@@ -288,7 +288,8 @@
 	                     tween(layer[skin_tooltip].alpha, 1.0, 0.1);
 	                     asyncloop(hovering, copy(layer[skin_tooltip].x,mouse.stagex); copy(layer[skin_tooltip].y,mouse.stagey); );"
 	       onout.mouse="tween(layer[skin_tooltip].alpha, 0.0, 0.1, default, set(layer[skin_tooltip].visible,false), copy(layer[skin_tooltip].x,mouse.stagex); copy(layer[skin_tooltip].y,mouse.stagey); );"
-	       />
+	       ondown.mouse="tween(layer[skin_tooltip].alpha, 0.0, 0.1, default, set(layer[skin_tooltip].visible,false), copy(layer[skin_tooltip].x,mouse.stagex); copy(layer[skin_tooltip].y,mouse.stagey); );"
+		   />
 
 
 	<!-- the tooltip textfield -->
@@ -296,10 +297,11 @@
 	       type="text"
 	       parent="STAGE"
 	       visible="false" alpha="0" enabled="false" zorder="2"
-	       align="lefttop" edge="bottom" oy="-2" width="200"
-	       bg="false"
+	       align="lefttop" edge="bottom" oy="-5"
+	       bg="true" bgcolor="0x000000" bgalpha="0.7"
+		   padding="7 12"
 	       textshadow="get:skin_settings.design_text_shadow" textshadowrange="6.0" textshadowangle="90" textshadowcolor="0x000000" textshadowalpha="1.0"
-	       css="calc:skin_settings.design_text_css + ' text-align:center; font-size:16px;'"
+	       css="calc:skin_settings.design_text_css + ' text-align:center; font-family:Arial,宋体; font-weight:normal; font-size:14px;'"
 	       html=""
 	       />
 

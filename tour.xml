@@ -3,7 +3,7 @@
 	<include url="skin/vtourskin.xml" />
 	<include url="plugins/rader.xml" />
 	<include url="plugins/krpanocms.xml" />
-	<include url="plugins/tooltips.xml" />
+	<!-- <include url="plugins/tooltips.xml" /> -->
 
 	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
 	<skin_settings maps="false"
@@ -27,8 +27,8 @@
 	               thumbs_scrollindicator="false"
 	               thumbs_loop="false"
 	               tooltips_buttons="false"
-	               tooltips_thumbs="false"
-	               tooltips_hotspots="false"
+	               tooltips_thumbs="true"
+	               tooltips_hotspots="true"
 	               tooltips_mapspots="false"
 	               deeplinking="false"
 	               loadscene_flags="MERGE"
@@ -75,8 +75,8 @@
 		if(startactions !== null, startactions() );
 	</action>
 
-	<layer name="spot1" style="mapspot|tooltip" tooltip="南广场正中" x="98" y="230" zorder="1" onclick="mapspot_loadscene(scene_scene1);" />
-	<layer name="spot2" style="mapspot|tooltip" tooltip="中心圆广场" x="98" y="147" zorder="1" onclick="mapspot_loadscene(scene_scene2);" />
+	<layer name="spot1" style="mapspot|skin_tooltips" tooltip="南广场正中" x="98" y="230" zorder="1" onclick="mapspot_loadscene(scene_scene1);" />
+	<layer name="spot2" style="mapspot|skin_tooltips" tooltip="中心圆广场" x="98" y="147" zorder="1" onclick="mapspot_loadscene(scene_scene2);" />
 
 	<scene name="scene_scene1" title="南广场正中" onstart="updateradar()" thumburl="panos/scene1.tiles/thumb.jpg" lat="" lng="" heading="">
 
@@ -93,7 +93,7 @@
 		<image>
 			<cube url="panos/scene1.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" title="南广场正中" style="skin_hotspotstyle" ath="174.799" atv="-2.594" linkedscene="scene_scene2" onloaded="showtxt_action();" />
+		<hotspot name="spot1" title="南广场正中" style="skin_hotspotstyle" ath="174.799" atv="-2.594" linkedscene="scene_scene2" onloaded="showtxt_action_j();" />
 
 	</scene>
 

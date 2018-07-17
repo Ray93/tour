@@ -21,13 +21,14 @@
 	       enabled="false"
 	       align="lefttop"
 	       edge="bottom"
-	       oy="-2"
-	       background="false" backgroundcolor="0xFFFFFF" backgroundalpha="1.0"
+	       oy="-10"
+	       background="true" backgroundcolor="0x000000" backgroundalpha="0.7"
 	       border="false" bordercolor="0x000000" borderalpha="1.0"
 	       borderwidth="1.0" roundedge="0"
+		   padding="7 12"
 	       shadow="0.0" shadowrange="4.0" shadowangle="45" shadowcolor="0x000000" shadowalpha="1.0"
 	       textshadow="1" textshadowrange="6.0" textshadowangle="90" textshadowcolor="0x000000" textshadowalpha="1.0"
-	       css="text-align:center; color:#FFFFFF; font-family:Arial; font-weight:bold; font-size:14px;"
+	       css="text-align:center; color:#FFFFFF; font-family:Arial,宋体; font-weight:normal; font-size:14px;"
 	       html=""
 	       />
 
