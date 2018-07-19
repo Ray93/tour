@@ -77,6 +77,7 @@
 
 	<layer name="spot1" style="mapspot|skin_tooltips" tooltip="南广场正中" x="98" y="230" zorder="1" onclick="mapspot_loadscene(scene_scene1);" />
 	<layer name="spot2" style="mapspot|skin_tooltips" tooltip="中心圆广场" x="98" y="147" zorder="1" onclick="mapspot_loadscene(scene_scene2);" />
+	<layer name="spot34" style="mapspot|skin_tooltips" tooltip="南厅0m内" x="98" y="185" zorder="1" onclick="mapspot_loadscene(scene_scene34);" />
 
 	<scene name="scene_scene1" title="南广场正中" onstart="updateradar()" thumburl="panos/scene1.tiles/thumb.jpg" lat="" lng="" heading="">
 
@@ -112,6 +113,7 @@
 		<image>
 			<cube url="panos/scene2.tiles/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" title="南厅0m内" style="skin_hotspotstyle" ath="-106.982" atv="-0.990" linkedscene="scene_scene34" onloaded="showtxt_action_j();" />
 
 	</scene>
 
@@ -487,9 +489,15 @@
 
 	</scene>
 
-	<scene name="scene_scene34" title="南厅0m内" onstart="" thumburl="panos/scene34.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_scene34" title="南厅0m内" onstart="updateradar()" thumburl="panos/scene34.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<action name="updateradar">
+			set(layer[activespot].parent, spot34);
+			set(layer[radar].parent, spot34);
+			set(layer[radar].heading, 150);
+		</action>
+
+		<view hlookat="-57.952" vlookat="3.349" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/scene34.tiles/preview.jpg" />
 
